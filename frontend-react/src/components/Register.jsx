@@ -53,7 +53,7 @@ const Register = () => {
                         </div>
                         <div className="mb-3">
                             <input type="password" className='form-control' placeholder='Set Password' value={password} onChange={(e) => setPassword(e.target.value)}/>
-                            <small>{errors.username && <div className="text-danger">{errors.password}</div>}</small>
+                            <small>{errors.password && <div className="text-danger">{errors.password}</div>}</small>
                         </div>
                         {success && <div className="alert alert-success">Registration Successful</div>}
                         {loading ? (
